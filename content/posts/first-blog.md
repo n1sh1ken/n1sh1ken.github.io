@@ -1,7 +1,7 @@
 ---
-title: "ブログ"
+title: "表示テスト"
 tags: ["first"]
-date: {{ dateFormat "2006-01-02" .Date }}
+date: 2026-04-28
 author: "Me"
 showToc: false
 TocOpen: true
@@ -39,4 +39,15 @@ cover:
 
 ### 見出し3
 
+#### 見出し4
+
+##### 見出し5
+
+通常文字
+
+**通常太字**
+
+
 - ここに内容を記載する
+
+

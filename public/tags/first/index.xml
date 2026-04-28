@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>First on n1sh1ken&#39;s blog</title>
+    <link>http://localhost:1313/tags/first/</link>
+    <description>Recent content in First on n1sh1ken&#39;s blog</description>
+    <image>
+      <title>n1sh1ken&#39;s blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>表示テスト</title>
+      <link>http://localhost:1313/posts/first-blog/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-blog/</guid>
+      <description>&lt;h1 id=&#34;見出し１&#34;&gt;見出し１&lt;/h1&gt;
+&lt;h2 id=&#34;見出し２&#34;&gt;見出し２&lt;/h2&gt;
+&lt;h3 id=&#34;見出し3&#34;&gt;見出し3&lt;/h3&gt;
+&lt;h4 id=&#34;見出し4&#34;&gt;見出し4&lt;/h4&gt;
+&lt;h5 id=&#34;見出し5&#34;&gt;見出し5&lt;/h5&gt;
+&lt;p&gt;通常文字&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通常太字&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ここに内容を記載する&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
