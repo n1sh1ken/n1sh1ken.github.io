@@ -1,7 +1,11 @@
 
 .header-nav {
     position: relative;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-areas:
+        "title title title"
+        ". menu toggle";
     justify-content: center;
     align-items: center;
     line-height: 1.2;
@@ -11,22 +15,23 @@
 }
 
 .logo {
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 0.9rem;
+    display: contents;
 }
 
 .logo-switches {
-    position: absolute;
-    right: calc(var(--gap) + 12.25rem);
-    bottom: 0.15rem;
+    grid-area: toggle;
+    justify-self: end;
+    align-self: end;
 }
 
 .logo a {
+    grid-area: title;
+    justify-self: center;
     position: relative;
     font-size: 42px;
     line-height: 1.1;
     padding-bottom: 0.65rem;
+    text-align: center;
 }
 
 .logo a::after {
@@ -51,6 +56,7 @@
     justify-content: center;
     gap: 0.35rem;
     min-height: auto;
+    white-space: nowrap;
 }
 
 .theme-toggle svg {
@@ -83,11 +89,13 @@
 }
 
 .menu {
+    grid-area: menu;
     justify-content: center;
-    width: 100%;
+    width: auto;
     margin-top: 0.9rem;
     padding-bottom: 0.55rem;
     overflow-y: visible;
+    justify-self: center;
 }
 
 .menu a {
@@ -246,4 +254,38 @@
 
 .post-content.md-content h3 {
     font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav {
+        padding-top: 1rem;
+        padding-bottom: 0.85rem;
+        row-gap: 0.6rem;
+        grid-template-columns: minmax(0, 1fr) minmax(0, auto) minmax(0, 1fr);
+        grid-template-areas:
+            "title title title"
+            ". menu toggle";
+    }
+
+    .logo {
+        display: contents;
+    }
+
+    .logo a {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .logo-switches {
+        justify-self: end;
+        align-self: end;
+        margin-top: 0;
+    }
+
+    .menu {
+        width: auto;
+        margin-top: 1rem;
+        padding-bottom: 0.7rem;
+        justify-self: center;
+    }
 }
